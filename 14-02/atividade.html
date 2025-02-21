@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de Site</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilos do Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #ab112b;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Estilos do container de texto e imagem */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .content .text {
+            width: 50%;
+            font-size: 20px;
+            padding: 20px;
+        }
+
+        .content .image {
+            width: 50%;
+        }
+
+        .content .image img {
+            width: 100%;
+        }
+
+        .text h1 {
+            color: #ab112b;
+        }
+
+        /* Estilos do container de cards */
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .card {
+    width: 30%;
+    border: 1px solid #ab112b;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: auto;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h3 {
+    padding: 15px;
+    color: #ab112b;
+}
+
+.card p {
+    padding: 0 15px 15px 15px;
+    color: #e1e114;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #aa112b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="navbar-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kentucky_Fried_Chicken_201x_logo.svg/2560px-Kentucky_Fried_Chicken_201x_logo.svg.png" width="200" height="100">
+    </div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">KFC mais proximo</a></li>
+        <li><a href="#">Peça agora</a></li>
+        <li><a href="#">Cupons</a></li>
+        <li><a href="#">...</a></li>
+    </ul>
+</nav>
+
+<!-- Container com metade texto e metade imagem -->
+<div class="content">
+    <div class="text">
+        <h1>O Melhor Frango Do Brasil</h1>
+        <p>Este é um exemplo básico de como estruturar um site utilizando HTML. Aqui você pode ver a divisão entre texto
+            e imagem, bem como a apresentação de cards logo abaixo.</p>
+    </div>
+    <div class="image">
+        <img src="https://cupons.kfcbrasil.com.br/wp-content/uploads/2025/01/BANNERSITE_KFC_1054x527_v1.jpg">
+    </div>
+</div>
+
+
+<div class="cards">
+    <div class="card">
+        <img src="https://cdn.sanity.io/images/8nn8fua5/production/ad4b07245ab05b22b6c516ae57be65a423b99fc0-1920x1080.jpg?w=720&fm=webp&q=65">
+        <h3>Frango C/ Fritas Grande</h3>
+        <p>R$ 29,00</p>
+    </div>
+    <div class="card">
+        <img src="https://static.kfc.com.sg/images/items/lg/nachosbbqz.jpg?v=L59qGL">
+        <h3>Nachos Picantes</h3>
+        <p>R$ 7,00</p>
+    </div>
+    <div class="card">
+        <img src="https://static.kfc.com.sg/images/items/lg/etcburgerboxnew.jpg?v=4l8bl4">
+        <h3>Combo Fit</h3>
+        <p>R$ 25,00</p>
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

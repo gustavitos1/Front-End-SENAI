@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Básica de Site com Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kentucky_Fried_Chicken_201x_logo.svg/2560px-Kentucky_Fried_Chicken_201x_logo.svg.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">KFC mais próximo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Peça agora</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Cupons</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">...</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h1>O Melhor Frango Do Brasil</h1>
+            <p>Aqui você encontrará as melhores porções de frango que um fast-food pode oferecer, temos Baldes, sanduíches, Combos, Aperitivos variadas e Sobremesa, confira as promoções eventuais</p>
+        </div>
+        <div class="col-md-6">
+            <img src="https://cupons.kfcbrasil.com.br/wp-content/uploads/2025/01/BANNERSITE_KFC_1054x527_v1.jpg" class="img-fluid" alt="Banner">
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://cdn.sanity.io/images/8nn8fua5/production/ad4b07245ab05b22b6c516ae57be65a423b99fc0-1920x1080.jpg?w=720&fm=webp&q=65" class="card-img-top" alt="Frango C/ Fritas Grande">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Frango C/ Fritas Grande</h5>
+                    <p class="custom-price">R$ 29,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://static.kfc.com.sg/images/items/lg/nachosbbqz.jpg?v=L59qGL" class="card-img-top" alt="Nachos Picantes">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Nachos Picantes</h5>
+                    <p class="custom-price">R$ 7,00</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://static.kfc.com.sg/images/items/lg/etcburgerboxnew.jpg?v=4l8bl4" class="card-img-top" alt="Combo Fit">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Combo Fit</h5>
+                    <p class="custom-price">R$ 25,00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
