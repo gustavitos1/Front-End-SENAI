@@ -1,3 +1,39 @@
 .meu-icone:hover {
     color: lightgreen;
 }
+
+.meu-insta:hover {
+    color: purple;
+}
+
+.meu-face:hover {
+    color: white;
+}
+
+.minhanav {
+    background-color: #aa112b;
+    color: white;
+}
+
+table tr {
+    border-color: black;
+}
+
+.minhanav2 {
+    background-color: #aa112b;
+}
+
+.saibamais {
+    color: blue;
+}
+
+@font-face {
+    font-family: 'RD2';
+    src: url('fontes/chinese rocks rg.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'RD2';
+}

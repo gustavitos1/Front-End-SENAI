@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estrutura Básica de Site</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="<KEY>" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-<nav class="minhanav navbar w-100 d-flex flex-row">
+
+<nav class="minhanav navbar d-flex flex-row">
     <a class="navbar-brand" href="#">
             <img class="h-25" style="width: 80px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Kentucky_Fried_Chicken_201x_logo.svg/2560px-Kentucky_Fried_Chicken_201x_logo.svg.png" alt="Logo">
         </a>
@@ -25,7 +25,7 @@
 
 <div class="d-flex flex-row mt-5 mb-5 my-5">
     <div class="text w-100 d-flex flex-column justify-content-center">
-        <h1 id="titulo" onmouseover="testecolor()" onmousedown="testeTexto()" onmouseup="reset()">O Melhor Frango do Brasil</h1>
+        <h1>O Melhor Frango do Brasil</h1>
         <p>Aqui você encontrará as melhores porções de frango que um Fast-Food pode oferecer, temos Baldes, Sanduíches, Combos, Aperitivos variadas e Sobremesa, confira as promoções eventuais</p>
     </div>
     <div class="image w-100">
@@ -33,25 +33,13 @@
     </div>
 </div>
 
-<!-- Container com 3 cards -->
-<div class="cards row justify-content-around my-5">
-    <div class="card col-3 align-items-center">
-        <img class="w-50 my-1" src="resources/kfckit.png" alt="Imagem do Card 1">
-        <h3>Combo Familia</h3>
-        <form>
-            <label>
-                parana
-                <input id="parana" onmouseover="testinput()">
-            </label>
-        </form>
+<div class="row mt-5 mb-5 my-5 align-items-center d-flex justify-content-center"> <!-- Usando grid do Bootstrap -->
+    <div class="col-md-6"> <!-- Imagem na esquerda -->
+        <img src="../kfc_1.png" alt="Exemplo de imagem" class="img-fluid">
     </div>
-    <div class="card col-3 align-items-center">
-        <img class="w-50" src="resources/combostarry.png" alt="Imagem do Card 2" >
-        <h3>Combo Fresh</h3>
-    </div>
-    <div class="card col-3 align-items-center">
-        <img class="w-50" src="resources/salad.png" alt="Imagem do Card 3">
-        <h3>Balde Kasakstanico</h3>
+    <div class="col-md-6 d-flex flex-column justify-content-center align-items-center"> <!-- Texto na direita -->
+        <h1>Venha Conhecer a Nossa Historia</h1>
+        <a class="saibamais">Saiba mais</a>
     </div>
 </div>
 
@@ -63,10 +51,7 @@
     <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-<script src="exemplo.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 </html>
